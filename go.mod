@@ -1,4 +1,4 @@
-module ingpoint
+module github.com/vvoronov2/ingpoint
 
 go 1.19
 
