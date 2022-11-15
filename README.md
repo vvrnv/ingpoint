@@ -16,7 +16,9 @@ go install github.com/vvoronov2/ingpoint@latest
 ```sh
 git clone https://github.com/vvoronov2/ingpoint.git
 cd ingpoint
-go build
+go build main.go
+
+./main
 ```
 
 # Usage
@@ -28,4 +30,4 @@ ingpoint
 ```
 
 TODO:
-- rewrite to kuberctl plugin
+- rewrite to kubectl plugin
