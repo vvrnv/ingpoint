@@ -1,11 +1,10 @@
 # Ingpoint
 
-script for getting k8s ingress public endpoints for current context
+script for getting ingress public endpoints for current kubernetes context
 
 # Install & build from source
 requirements:
-- `go`
-- `$GOPATH/bin`
+- `go` installed
 
 ### go
 ```sh
@@ -16,9 +15,8 @@ go install github.com/vvoronov2/ingpoint@latest
 ```sh
 git clone https://github.com/vvoronov2/ingpoint.git
 cd ingpoint
-go build main.go
-
-./main
+go build ingpoint.go
+./ingpoint
 ```
 
 # Usage
@@ -26,7 +24,13 @@ requirements:
 - `kubectl`
 
 ```sh
-ingpoint
+➜  ~ kubectl config use-context dev
+Switched to context "dev".
+
+➜  ~ ingpoint
+"jira-666.example.domain.com"
+"test.domain.com"
+"*.example.domain.com"
 ```
 
 TODO:
