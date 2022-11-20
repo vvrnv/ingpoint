@@ -2,7 +2,7 @@ module github.com/vvoronov2/ingpoint
 
 go 1.19
 
-require github.com/bitfield/script v0.21.1
+require github.com/bitfield/script v0.21.3
 
 require (
 	bitbucket.org/creachadair/shell v0.0.7 // indirect
