@@ -8,12 +8,12 @@ requirements:
 
 ### go
 ```sh
-go install github.com/vvoronov2/ingpoint@latest
+go install github.com/vvrnv/ingpoint@latest
 ```
 
 ### build from source
 ```sh
-git clone https://github.com/vvoronov2/ingpoint.git
+git clone https://github.com/vvrnv/ingpoint.git
 cd ingpoint
 go build ingpoint.go
 ./ingpoint
