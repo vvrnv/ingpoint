@@ -3,7 +3,7 @@ module github.com/vvrnv/ingpoint
 go 1.19
 
 require (
-	github.com/bitfield/script v0.21.3
+	github.com/bitfield/script v0.21.4
 	github.com/sirupsen/logrus v1.9.0
 )
 
