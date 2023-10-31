@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/bitfield/script v0.22.0
-	github.com/sirupsen/logrus v1.9.1
+	github.com/sirupsen/logrus v1.9.3
 )
 
 require (
