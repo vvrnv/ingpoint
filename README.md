@@ -1,26 +1,38 @@
 # Ingpoint
 
-script for getting ingress public endpoints for current kubernetes context
+app to get all unique ingress hosts for current kubernetes context
 
-# Install & build from source
+## Install
+
+### homebrew
+
+```sh
+brew install vvrnv/tap/ingpoint
+```
+
+### go or build from source code
+
 requirements:
+
 - `go` installed
 
-### go
 ```sh
 go install github.com/vvrnv/ingpoint@latest
 ```
 
-### build from source
+or
+
 ```sh
 git clone https://github.com/vvrnv/ingpoint.git
 cd ingpoint
-go build ingpoint.go
+go build -o ingpoint
 ./ingpoint
 ```
 
-# Usage
+## Usage
+
 requirements:
+
 - `kubectl`
 
 ```sh
@@ -28,10 +40,7 @@ requirements:
 Switched to context "dev".
 
 ➜  ~ ingpoint
-"jira-666.example.domain.com"
-"test.domain.com"
-"*.example.domain.com"
+jira-666.example.domain.com
+test.domain.com
+*.example.domain.com
 ```
-
-TODO:
-- rewrite to kubectl plugin
