@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"path/filepath"
+	"sort"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes"
@@ -48,7 +49,14 @@ func main() {
 		}
 	}
 
+	hosts := make([]string, 0, len(uniqueHosts))
+
 	for host := range uniqueHosts {
+		hosts = append(hosts, host)
+	}
+	sort.Strings(hosts)
+
+	for _, host := range hosts {
 		fmt.Println(host)
 	}
 
