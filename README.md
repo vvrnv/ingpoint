@@ -29,6 +29,8 @@ go build -o ingpoint
 ./ingpoint
 ```
 
+### download a biany from [release page](https://github.com/vvrnv/ingpoint/releases)
+
 ## Usage
 
 requirements:
