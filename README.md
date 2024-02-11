@@ -6,17 +6,21 @@ app to get all unique ingress hosts for current kubernetes context
 
 ### homebrew
 
+```sh
+brew install vvrnv/tap/ingpoint
+```
+
+### go or build from source code
+
 requirements:
 
 - `go` installed
-
-### go
 
 ```sh
 go install github.com/vvrnv/ingpoint@latest
 ```
 
-### build from source
+or
 
 ```sh
 git clone https://github.com/vvrnv/ingpoint.git
@@ -36,7 +40,7 @@ requirements:
 Switched to context "dev".
 
 ➜  ~ ingpoint
-"jira-666.example.domain.com"
-"test.domain.com"
-"*.example.domain.com"
+jira-666.example.domain.com
+test.domain.com
+*.example.domain.com
 ```
