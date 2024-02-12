@@ -29,7 +29,7 @@ go build -o ingpoint
 ./ingpoint
 ```
 
-### download a biany from [release page](https://github.com/vvrnv/ingpoint/releases)
+### download a binary from [release page](https://github.com/vvrnv/ingpoint/releases)
 
 ## Usage
 
