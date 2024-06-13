@@ -1,10 +1,10 @@
 module github.com/vvrnv/ingpoint
 
 go 1.21
-toolchain go1.22.2
+toolchain go1.22.3
 
 require (
-	k8s.io/apimachinery v0.30.1
+	k8s.io/apimachinery v0.30.2
 	k8s.io/client-go v0.30.1
 )
 
