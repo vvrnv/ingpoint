@@ -31,9 +31,9 @@ brews:
   - repository:
       owner: vvrnv
       name: homebrew-tap
-    folder: Formula
+    directory: Formula
     goarm: "7"
-    homepage: https://vvrnv.dev
+    homepage: https://vvrnv.github.io
     description: app to get all unique ingress hosts for current kubernetes context
     license: MIT
     commit_author:
